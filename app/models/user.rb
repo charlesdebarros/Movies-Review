@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :movies
+  has_many :reviews, dependent: :destroy  # destroy all user associated reviews if user deletes his account.
+  
 end
