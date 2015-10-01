@@ -17,15 +17,6 @@ gem 'paperclip', '~> 4.2.1'
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
