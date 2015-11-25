@@ -14,4 +14,4 @@ This is a basic movie review website built in Ruby on Rails. The need to sign up
 * Paperclip
 * Devise
 
-This application was developed using a Linux Mint 17 operating system, using Sublime Text 3.
+This application was developed using a Linux Mint 17 operating system and Sublime Text 3.
