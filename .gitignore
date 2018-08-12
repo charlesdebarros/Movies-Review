@@ -12,3 +12,6 @@
 !/log/.keep
 /tmp
 /public/system/movies/images
+
+.DS_Store
+*/.DS_Store
