@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.5'
+ruby '2.5.0'
 gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'devise'
