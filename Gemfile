@@ -8,10 +8,11 @@ gem 'jbuilder'
 gem 'jquery-rails'
 gem 'paperclip'
 gem 'pg', '0.21.0'
-gem 'rails', '5.0.1'
+gem 'rails', '5.0.7.1'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
-gem 'therubyracer', '0.12.3', platforms: :ruby
+# gem 'therubyracer', '0.12.3', platforms: :ruby
+gem 'mini_racer', '~> 0.2.4'
 gem 'turbolinks'
 gem 'uglifier'
 

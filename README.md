@@ -1,6 +1,6 @@
 ### Movies Review
 
-This is a basic movie review website built in Ruby on Rails. The need to sign up in order to add a new movie and write reviews. Users can also add a star rating review. 
+This is a basic movie review website built in Ruby on Rails. The need to sign up in order to add a new movie and write reviews. Users can also add a star rating review.
 
 ![image](https://raw.githubusercontent.com/charlesdebarros/Movies-Review/master/app/assets/images/movies_review_screenshot_1.png)
 
@@ -13,5 +13,3 @@ This is a basic movie review website built in Ruby on Rails. The need to sign up
 * Sass
 * Paperclip
 * Devise
-
-This application was developed using a Linux Mint 17 operating system and Sublime Text 3.
