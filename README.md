@@ -8,8 +8,8 @@ This is a basic movie review website built in Ruby on Rails. The need to sign up
 
 ### Technologies used
 
-* Ruby 2.5.X
-* Rails 5.0.7.X
+* Ruby 2.6.X
+* Rails 5.2.X
 * Postgres
 * Sass
 * Paperclip

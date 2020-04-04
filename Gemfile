@@ -12,7 +12,7 @@ gem 'jquery-rails'
 gem 'mini_racer'
 gem 'paperclip'
 gem 'pg', '0.21.0'
-gem 'rails', '5.0.7.2'
+gem 'rails', '~> 5.2.4'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
