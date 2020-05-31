@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.6.5'
 gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'devise'
@@ -12,7 +12,7 @@ gem 'jquery-rails'
 gem 'mini_racer'
 gem 'paperclip'
 gem 'pg', '0.21.0'
-gem 'rails', '~> 5.2.4'
+gem 'rails', '~> 5.2.4.3'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
