@@ -2,14 +2,14 @@
 
 source 'https://rubygems.org'
 
-ruby '2.6.5'
+ruby '2.7.2'
 gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'devise'
 gem 'jbuilder'
 gem 'jquery-rails'
-# gem 'therubyracer', '0.12.3', platforms: :ruby
 gem 'mini_racer'
+gem 'nokogiri', '>= 1.11.0.rc4'
 gem 'paperclip'
 gem 'pg', '0.21.0'
 gem 'rails', '~> 5.2.4.3'
