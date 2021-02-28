@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Sets the Movies Review cycle of adding, editing, updating and deleting
 class MoviesController < ApplicationController
   before_action :set_movie, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
@@ -11,11 +12,7 @@ class MoviesController < ApplicationController
   def show
     @reviews = Review.where(movie_id: @movie.id).order('created_at DESC')
 
-    if @reviews.blank?
-      @avg_review = 0
-    else
-      @avg_review = @reviews.average(:rating).round(2)
-    end
+    @reviews.blank? ? @avg_review = 0 : @avg_review = @reviews.average(:rating).round(2)
   end
 
   def new

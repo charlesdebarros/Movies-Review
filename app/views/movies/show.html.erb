@@ -31,12 +31,12 @@
             </tbody>
           </table>
           <%= link_to "Write a review", new_movie_review_path(@movie) %>
-        </div> <!-- end of table-responsive -->
+        </div>
+        <!-- end of table-responsive -->
       </div>
       <div class="col-md-7 col-md-offset-1">
         <h2 class="review_title"><%= @movie.title %></h2>
         <p><%= @movie.description %></p>
-
         <% if @reviews.blank? %>
           <h4>No reviews just yet! Be the first to add a review!</h4>
           <%= link_to "Write a review", new_movie_review_path(@movie), class: "btn btn-danger" %>
@@ -48,22 +48,25 @@
             </div>
           <% end %>
         <% end %>
-
       </div>
-    </div> <!-- end of row -->
-  </div> <!-- end of panel-body -->
-</div> <!-- end of panel -->
-
-
-  <%= link_to 'Edit', edit_movie_path(@movie) %> |
-  <%= link_to 'Back', movies_path %>
-
-  <script>
-    $('.star-rating').raty({
-      path: '/assets/',
-      readOnly: true,
-      score: function(){
-        return $(this).attr('data-score');
-      }
-    });
-  </script>
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of panel-body -->
+</div>
+<!-- end of panel -->
+<footer>
+  <div class="btn-group">
+    <%= link_to 'Edit', edit_movie_path(@movie), class: 'btn btn-primary' %> |
+    <%= link_to 'Back', movies_path, class: 'btn btn-primary' %>
+  </div>
+</footer>
+<script>
+  $('.star-rating').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-score');
+    }
+  });
+</script>
