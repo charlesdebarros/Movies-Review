@@ -9,6 +9,7 @@ This is a basic movie review website built in Ruby on Rails. The need to sign up
 ### Installing Movies Review
 
 Clone the repo
+
 Change to its directory:
 ```cd Movies-Review```
 
@@ -31,6 +32,7 @@ Now have fun!
 
 * Ruby 2.7.X
 * Rails 6.1.X
+* Haml
 * Postgres
 * Sass
 * Paperclip
