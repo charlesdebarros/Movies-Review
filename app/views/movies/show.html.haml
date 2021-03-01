@@ -1,0 +1,64 @@
+.panel.panel-default
+  .panel-body
+    .row
+      .col-md-4
+        = image_tag @movie.image.url(:medium)
+        .star-rating{ "data-score" => @avg_review }
+        %em= "#{@reviews.length} reviews"
+        .table-responsive
+          %table.table
+            %tbody
+              %tr
+                %td
+                  %strong Title:
+                %td=@movie.title
+              %tr
+                %td
+                  %strong Description:
+                %td= @movie.description
+              %tr
+                %td
+                  %strong Movie length:
+                %td=@movie.movie_length
+              %tr
+                %td
+                  %strong Director:
+                %td=@movie.director
+              %tr
+                %td
+                  %strong Rating:
+                %td=@movie.rating
+
+          = link_to "Write a review", new_movie_review_path(@movie)
+
+      .col-md-7.col-md-offset-1
+        %h2.review_title
+          = @movie.title
+        %p= @movie.description
+
+        -if @reviews.blank?
+          <h4>No reviews just yet! Be the first to add a review!</h4>
+          = link_to "Write a review", new_movie_review_path(@movie), { class: "btn btn-info" }
+        -else
+          -@reviews.each do |review|
+            .reviews
+              .star-rating{"data-score" => review.rating}
+              %p
+                = review.comment
+                %br
+                %br
+                = link_to 'Edit Review', edit_movie_review_path([@movie, @review]), { class: "btn btn-info" }
+
+%footer
+  .btn-group
+    = link_to 'Edit', edit_movie_path(@movie), class: 'btn btn-primary' |
+    = link_to 'Back', movies_path, class: 'btn btn-primary'
+
+:javascript
+  $('.star-rating').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-score');
+    }
+  });
