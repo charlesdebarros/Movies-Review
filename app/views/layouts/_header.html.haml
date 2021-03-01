@@ -1,0 +1,31 @@
+%nav.navbar.navbar-dark{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapse{type: "button", 'data-toggle' => "collapse", 'data-target' => "#bs-example-navbar-collapse-1"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "Movie Reviews", root_path, class: "navbar-brand"
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    .collapse.navbar-collapse{'id':'bs-example-navbar-collapse-1'}
+      %ul
+        .nav.navbar-nav
+          - if user_signed_in?
+            %li
+              = link_to "New Movie", new_movie_path, class: "active"
+            %li
+              = link_to "Account", edit_user_registration_path
+          - else
+            %li
+              = link_to "Sign Up", new_user_registration_path, class: "active"
+            %li
+              = link_to "Sign In", new_user_session_path, class: "active"
+      %form
+        .navbar-form.navbar-right{role: 'search'}
+          .form-group
+            %input.form-control{type:"text", placeholder: "Search"}
+          %button.btn.btn-default{type: "submit"} Submit
+    /.navbar-collapse
+  /.container-fluid
