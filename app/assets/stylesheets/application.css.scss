@@ -22,16 +22,17 @@ body {
 }
 
 .navbar {
-  background-color: rgb(16,2,54);
+  background-color: rgb(16, 2, 54);
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.navbar-header a, .navbar-nav a {
+.navbar-header a,
+.navbar-nav a {
   color: rgb(255, 255, 255);
 }
 
 .navbar-nav li a:hover {
-  background-color: rgb(51,122,183);
+  background-color: rgb(51, 122, 183);
 }
 
 .review_title {
