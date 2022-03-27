@@ -22,7 +22,7 @@ movie_1 = Movie.create(
   rating: '7.5',
   image_file_name: 'harry_potter_order_of_the_phoenix_poster.jpg',
   image_content_type: 'image/jpeg',
-  image_file_size: 37495,
+  image_file_size: 37_495,
   image_updated_at: Time.now,
   user_id: 999
 )
@@ -36,7 +36,7 @@ movie_2 = Movie.create(
   rating: '8.6',
   image_file_name: 'star-wars-episode-iv-new-hope_poster.jpg',
   image_content_type: 'image/jpeg',
-  image_file_size: 39605,
+  image_file_size: 39_605,
   image_updated_at: Time.now,
   user_id: 999
 )
@@ -44,13 +44,13 @@ movie_2 = Movie.create(
 movie_3 = Movie.create(
   id: 903,
   title: 'The Silence of the Lamb',
-  description: "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+  description: 'A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.',
   movie_length: '118',
   director: 'Jonathan Demmse',
   rating: '8.6',
   image_file_name: 'the_silence_of_the_lambs_poster.jpg',
   image_content_type: 'image/jpeg',
-  image_file_size: 176967,
+  image_file_size: 176_967,
   image_updated_at: Time.now,
   user_id: 999
 )
@@ -64,7 +64,7 @@ movie_4 = Movie.create(
   rating: '8.0',
   image_file_name: 'jaws_poster.jpg',
   image_content_type: 'image/jpeg',
-  image_file_size: 86524,
+  image_file_size: 86_524,
   image_updated_at: Time.now,
   user_id: 999
 )
