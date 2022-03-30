@@ -18,7 +18,7 @@ gem 'mini_racer', '~> 0.6.1'
 gem 'nokogiri', '~> 1.13', '>= 1.13.3'
 gem 'paperclip'
 gem 'pg'
-gem 'puma', '~> 5.6', '>= 5.6.2'
+gem 'puma', '~> 5.6'
 gem 'rails', '~> 6.1', '>= 6.1.5'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
