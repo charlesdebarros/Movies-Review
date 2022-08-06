@@ -16,6 +16,7 @@ gem 'haml', '~> 5.2', '>= 5.2.2'
 gem 'jbuilder'
 gem 'jquery-rails'
 gem 'mini_racer', '~> 0.6.2'
+gem 'net-smtp', '~> 0.3.1', require: false
 gem 'nokogiri', '~> 1.13', '>= 1.13.8'
 gem 'paperclip', '~> 6.1'
 gem 'pg'
