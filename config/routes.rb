@@ -1,10 +1,10 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
-  
+Rails.application.routes.draw do
   devise_for :users
-  
+
   resources :movies do
-    resources :reviews, except: [:show, :index]
+    resources :reviews, except: %i[show index]
   end
 
   root 'movies#index'
@@ -23,5 +23,4 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
 end

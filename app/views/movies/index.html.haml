@@ -9,5 +9,4 @@
   - @movies.each do |movie|
     .col-sm-6.col-md-3
       .thumbnail
-        puts movie.image_path
-        = link_to (image_tag movie.image.image_path(:medium), class: "image"), movie
+        = link_to (image_tag movie.image.url(:medium), class: "image"), movie
