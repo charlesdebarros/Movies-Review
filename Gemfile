@@ -7,7 +7,7 @@ source 'https://rubygems.org'
 # https://docs.knapsackpro.com/2020/uri-escape-is-obsolete-percent-encoding-your-query-string
 # without URI.encode, the app breaks. No work around yet.
 
-ruby '3.1.2'
+ruby '3.2.1'
 
 gem 'bootstrap-sass'
 gem 'coffee-rails'
@@ -20,7 +20,7 @@ gem 'nokogiri', '~> 1.13', '>= 1.13.8'
 gem 'paperclip', '~> 6.1'
 gem 'pg'
 gem 'puma', '~> 5.6', '>= 5.6.4'
-gem 'rails', '~> 6.1', '>= 6.1.6.1'
+gem 'rails', '~> 6.1', '>= 6.1.7.2'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'turbolinks'

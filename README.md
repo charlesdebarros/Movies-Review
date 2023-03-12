@@ -30,7 +30,7 @@ Now have fun!
 
 ### Technologies used
 
-* Ruby 3.0.X
+* Ruby 3.2.X
 * Rails 6.1.X
 * Haml
 * Postgres
